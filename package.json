@@ -1,0 +1,15 @@
+{
+  "name": "cypress-pom",
+  "version": "1.0.0",
+  "description": "Automation framework cypress with javascript",
+  "main": "index.js",
+  "scripts": {
+    "cypress:ui": "cypress open",
+    "cypress:headless": "cypress run --spec \"cypress/integration/app/home-page.cy.js\""
+  },
+  "author": "Amit Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
