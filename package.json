@@ -4,12 +4,15 @@
   "description": "Automation framework cypress with javascript",
   "main": "index.js",
   "scripts": {
-    "cypress:ui": "cypress open",
-    "cypress:headless": "cypress run --spec \"cypress/integration/app/home-page.cy.js\""
+    "cypress:ui": "cypress open --env allure=true",
+    "cypress:headless": "cypress run --spec \"cypress/integration/app/home-page.cy.js\"",
+    "cypress:allure": "cypress run --env allure=true"
+
   },
   "author": "Amit Kumar",
   "license": "ISC",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.0",
     "cypress": "^9.7.0"
   }
 }

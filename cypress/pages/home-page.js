@@ -5,7 +5,7 @@ const environment = Cypress.config().baseUrl;
 export class HomePage{
 
    
-     get test(){
+     gettest() {
         console.log(cy.get(HomePageLocator.todos()).contains("Commands"));
     }
 
@@ -15,7 +15,7 @@ export class HomePage{
     }
 
     async performtest(){
-        //this.test();
+    this.gettest();
      cy.get('.todo-list li').should('have.length', 2);
      cy.get('.todo-list li').first().should('have.text', 'Pay electric bill');
      cy.get('.todo-list li').last().should('have.text', 'Walk the dog');
