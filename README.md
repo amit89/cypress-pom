@@ -1,5 +1,5 @@
 ## About the project
-An automation framework for testing webapplication using Cypress with javascript
+An automation framework for testing webapplication using Cypress with Typescript
 
 ## Getting started
 ## Prerequisite
@@ -7,21 +7,31 @@ An automation framework for testing webapplication using Cypress with javascript
     -- Allure-CLI
     -- Java8
 
-Install Node
+## Install Node
     -- https://nodejs.org/en/download
 
-Win
-    -- npm install -g allure-commandline --save-dev
+## Install Allure-cli
 
-Mac
-    -- brew install allure
+    Win
+        -- npm install -g allure-commandline --save-dev
+
+    Mac
+        -- brew install allure
+
 
 ## Setup project
-Hit the below command on terminal
+Run the below command on terminal
+
     -- npm install
 
+
 ## Run the test case:
-    -- npm run cypress:ui           -- (this will open the interative mode of cypress)
-    -- npm run cypress:headless     -- (this will run the testcases in headless mode)
-    -- npm run cypress:allure       -- this will run test cases in headless mode and generate allure report
-    -- allure serve allure-results  -- after above command execution gets completed run this commnd on terminal it will open the allure report on your machine
+
+    -- npm run test:ui           -- (this will open the interative mode of cypress and run the ui tests only)
+    -- npm run test:headless     -- (this will run the testcases in headless mode)
+    -- npm run cypress:api       -- (this will run the api test cases only)
+
+## Generate allure report need to run below two commands sequentially 
+  
+    -- npm run allure:report
+    -- npm run allure:open

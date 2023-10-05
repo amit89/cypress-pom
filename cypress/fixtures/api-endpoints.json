@@ -1,0 +1,4 @@
+{
+  "CREATE_USER": "https://reqres.in/api/users",
+  "GET_USERS": "https://reqres.in/api/users?page=2"
+}

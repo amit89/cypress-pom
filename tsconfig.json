@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "target": "ES2016",
+    "lib": [
+      "ES2016",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "node",
+      "@shelex/cypress-allure-plugin"
+    ],
+    "outDir": "./dist",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+  },
+  "include": [
+    "cypress/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

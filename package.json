@@ -4,15 +4,19 @@
   "description": "Automation framework cypress with javascript",
   "main": "index.js",
   "scripts": {
-    "cypress:ui": "cypress open --env allure=true",
-    "cypress:headless": "cypress run --spec \"cypress/integration/app/home-page.cy.js\"",
-    "cypress:allure": "cypress run --env allure=true"
-
+    "test": "cypress run --spec \"cypress/e2e/app/home-page-test.cy.ts\"",
+    "test:api": "cypress run --spec \"cypress/e2e/app/api-test.cy.ts\"",
+    "test:ui": "cypress open",
+    "allure:report": "allure generate allure-results --clean -o allure-reports",
+    "allure:open": "allure open allure-reports"
   },
   "author": "Amit Kumar",
   "license": "ISC",
   "devDependencies": {
+    "@mmisty/cypress-allure-adapter": "^0.11.0",
     "@shelex/cypress-allure-plugin": "^2.40.0",
-    "cypress": "^9.7.0"
+    "cypress": "^13.3.0",
+    "cypress-mochawesome-reporter": "^3.6.0",
+    "typescript": "^5.2.2"
   }
 }

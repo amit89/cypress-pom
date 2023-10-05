@@ -8,8 +8,12 @@ describe('example to-do app', () => {
     homePage.setupApp();
   })
 
-  it('displays two todo items by default', () => {
-    homePage.performtest();
+  it('Test_01: This is positive dummy test for demo purpose', () => {
+    homePage.dummyMethod1();
+  })
+
+  it('Test_02: This is negative dummy test for demo purpose', () => {
+    homePage.dummyMethod2();
   })
 
 })
